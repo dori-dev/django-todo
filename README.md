@@ -1,2 +1,3 @@
 # Django Todo
-Todo applications use Django, HTML, CSS, JS, BOOTSTRAP
+Beautiful To Do List use Django!
+
