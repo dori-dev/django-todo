@@ -9,11 +9,11 @@
     <form class="create-todo-form" action="" method="post">
         <div class="input-container">
             <label for="">عنوان کار</label>
-            <input type="text" class="form-control" name="work" value="{{ work }}" maxlength="90" required id="id_work" placeholder="کاری که میخواهید انجام دهید را اینجا بنویسید مثلا مرتب کردن اتاق">
+            <input type="text" class="form-control" name="work" value="{{ work }}" maxlength="90" required id="id_work" placeholder="کاری که میخواهی انجام بدی مثلا مرتب کردن اتاق">
         </div>
         <div class="input-container">
             <label for="">زمان(اختیاری)</label>
-            <input type="text" class="form-control" name="date" value="{{ date }}" maxlength="50" id="id_date" placeholder="زمان مورد نظرت برای انجام این کار رو بنویس برای مثلا چهارشنبه عصر">
+            <input type="text" class="form-control" name="date" value="{{ date }}" maxlength="50" id="id_date" placeholder="زمان انجام این کار مثلا چهارشنبه عصر">
         </div>
         {% csrf_token %}
         <button type="submit" class="btn btn-primary neighbor-btn large-btn">آپدیت کردن</button>

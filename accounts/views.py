@@ -11,7 +11,7 @@ def register_view(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect("/")
+            return redirect("todoapp:todo_list")
     else:
         form = UserCreationForm()
     arg = {
@@ -27,7 +27,9 @@ def login_view(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect("/")
+            if "next" in request.POST:
+                return redirect(request.POST.get('next'))
+            return redirect("todoapp:todo_list")
     else:
         form = AuthenticationForm()
     arg = {
@@ -40,4 +42,4 @@ def logout_view(request):
     """logout view"""
     if request.method == "POST":
         logout(request)
-        return redirect("/")
+        return redirect("todoapp:home_url")

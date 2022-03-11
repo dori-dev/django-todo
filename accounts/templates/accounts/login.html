@@ -46,6 +46,9 @@
         <label for="">رمز عبور</label>
         <input class="form-control" type="password" name="password" autocomplete="current-password" required id="id_password" placeholder="رمز عبور خود را وارد کنید">
     </div>
+    {% if request.GET.next %}
+    <input type="hidden" name="next" value="{{ request.GET.next }}">
+    {% endif %}
     {% csrf_token %}
     <button class="btn btn-primary auth-btn neighbor-btn">ورود</button>
     <div style="margin-top: 60px;">
