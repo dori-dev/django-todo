@@ -4,15 +4,11 @@
 
 
 {% block content %}
-<!-- TODO hint for add todo and todo list first login -->
 <h1 class="page-label">ورود</h1>
 
 
 {% if request.GET.next %}
-
-
 {% if request.GET.next == "/list/" %}
-
 <h2 class="warning">برای دیدن "لیست کارها" ابتدا <b style="color: #0275d8;">وارد</b> شوید یا <a style="text-decoration: none;" href="{% url 'accounts:register' %}"><b style="color: #42ba96;">ثبت نام</b></a> کنید</h2>
 {% else %}
 {% if request.GET.next == "/create/" %}
