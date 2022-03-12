@@ -35,9 +35,6 @@ pip install -r requirements.txt
 python manage.py makemigrations todoapp
 ```
 ```
-python manage.py makemigrations articles
-```
-```
 python manage.py migrate
 ```
 
