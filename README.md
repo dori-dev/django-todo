@@ -30,3 +30,13 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+## Migrate Models
+```
+python manage.py makemigrations todoapp
+```
+```
+python manage.py makemigrations articles
+```
+```
+python manage.py migrate
+```
