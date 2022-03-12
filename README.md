@@ -1,5 +1,5 @@
 # Django Todo
-Beautiful To Do List use Django!
+Beautiful To Do List use Django & Bootstrap!
 
 #
 ## Tools
