@@ -8,3 +8,12 @@ Beautiful To Do List use Django!
 
 #
 # How to Run Project
+
+## Download Codes
+```
+git clone https://github.com/dori-dev/django-todo.git
+```
+```
+cd django-todo
+```
+
