@@ -40,3 +40,21 @@ python manage.py makemigrations articles
 ```
 python manage.py migrate
 ```
+
+## Add Super User
+```
+python manage.py createsuperuser
+```
+
+## Run Codes
+```
+python manage.py runserver
+```
+
+## Open On Browser
+Home Page
+[127.0.0.1:8000](http://127.0.0.1:8000/)
+
+Admin Page
+[127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
